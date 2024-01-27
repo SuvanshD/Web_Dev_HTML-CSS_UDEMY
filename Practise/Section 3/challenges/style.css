@@ -1,6 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: sans-serif;
   line-height: 1.4;
+}
+
+.container {
+  width: 825px;
+  margin: 50px auto;
 }
 
 /* PRODUCT */
@@ -13,6 +23,7 @@ body {
   font-size: 22px;
   text-transform: uppercase;
   background-color: #f7f7f7;
+  padding: 15px;
 }
 
 /* PRODUCT INFORMATION */
@@ -26,11 +37,20 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   color: #777;
+  margin-bottom: 20px;
+}
+
+.description {
+  margin: 10px 0 -20px 0;
+}
+
+.more-info-container {
+  margin: 30px 0;
 }
 
 .more-info:link,
 .more-info:visited {
-  color: black;
+  color: #000;
 }
 
 .more-info:hover,
@@ -42,10 +62,16 @@ body {
 .details-title {
   text-transform: uppercase;
   font-size: 16px;
+  margin: 10px 0;
 }
 
-.details-list {
+.list {
   list-style: square;
+  margin-left: 20px;
+}
+
+.list-each {
+  margin: 5px 0;
 }
 
 /* BUTTON */
@@ -56,6 +82,9 @@ body {
   font-size: 20px;
   text-transform: uppercase;
   cursor: pointer;
+  border-top: 4px solid black;
+  width: 100%;
+  padding: 20px;
 }
 
 .add-cart:hover {
