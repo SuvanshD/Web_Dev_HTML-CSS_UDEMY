@@ -3,10 +3,13 @@
   padding: 0;
 }
 
+/* PAGE SECTIONS */
+
 body {
   color: #444444;
   font-family: sans-serif;
   border-top: 10px solid #1098ad;
+  position: relative;
 }
 
 .container {
@@ -20,13 +23,26 @@ body {
   padding-left: 40px;
   padding-right: 40px; */
   padding: 20px 40px;
-  height: 80px;
+  height: 65px;
 }
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
 nav {
   font-size: 18px;
 }
 
+nav a:link {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+
 article {
+  margin-top: 60px;
   margin-bottom: 60px;
 }
 
@@ -43,6 +59,8 @@ aside {
   width: 500px;
 }
 
+/* SMALLER ELEMENTS */
+
 h1,
 h2,
 h3 {
@@ -58,6 +76,20 @@ h1 {
 h2 {
   font-size: 40px;
   margin-bottom: 30px;
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  color: #444;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 10px;
+  display: inline-block;
+  position: absolute;
+  top: -10px;
+  right: -25px;
 }
 
 h3 {
@@ -178,4 +210,17 @@ footer p {
 
 /* nav a:link {
   font-size: 18px;
+} */
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  cursor: pointer;
+}
+
+/* h3 + p::first-line {
+  color: red;
 } */
